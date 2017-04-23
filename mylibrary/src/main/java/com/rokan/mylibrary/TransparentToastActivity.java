@@ -38,6 +38,6 @@ public class TransparentToastActivity extends BaseActivity {
 
         DialogNavBarHide.navBarHide(this, dialog);
 
-        
+
     }
 }
