@@ -13,24 +13,11 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
 
-
 public class Animanation {
-
-    public static final int noAnimation = 0;
-    public static final int shake1 = 1;
-    public static final int shake2 = 2;
-    public static final int blink1 = 3;
-    public static final int slideTopToBottom = 4;
-    public static final int slideBottomToTop = 5;
-    public static final int slideLeftToRight = 6;
-    public static final int slideRightToLeft = 7;
-    public static final int wiggleAnimation = 8;
-    public static final String animationName[] = {"No Animation", "Alpha 1", "Alpha 2", "Blink 1", "slideTopToBottom", "slideBottomToTop", "slideLeftToRight", "slideRightToLeft", "wiggleAnimation"};
 
     public static void clear(View view) {
         view.setAnimation(null);
     }
-
 
     // zoomout animation method by sumon
     public static void zoomOut(final View v) {
@@ -115,7 +102,6 @@ public class Animanation {
 
         return scaleDown;
     }
-
 
 
     public static void wiggleAnimation(View v) {
@@ -574,17 +560,18 @@ public class Animanation {
     // handling tutorial
 
     public static void tutorialWithOutReverse(View v, int posX, int posY) {
-        float animationPosX=(float) posX;
-        float animationPosY=(float) posY;
+        float animationPosX = (float) posX;
+        float animationPosY = (float) posY;
         TranslateAnimation animation = new TranslateAnimation(0.0f, animationPosX, 0.0f, animationPosY);
         animation.setDuration(1000); // animation duration
         animation.setRepeatCount(Animation.INFINITE);
         v.setVisibility(View.VISIBLE);
         v.startAnimation(animation);
     }
+
     public static void tutorialWithReverse(View v, int posX, int posY) {
-        float animationPosX=(float) posX;
-        float animationPosY=(float) posY;
+        float animationPosX = (float) posX;
+        float animationPosY = (float) posY;
         TranslateAnimation animation = new TranslateAnimation(0.0f, animationPosX, 0.0f, animationPosY);
         animation.setDuration(1000); // animation duration
         animation.setRepeatCount(Animation.INFINITE);
@@ -592,6 +579,7 @@ public class Animanation {
         v.setVisibility(View.VISIBLE);
         v.startAnimation(animation);
     }
+
     // wobbleAnimation by Rokan
     public static void wobbleAnimation(final View v) {
         RotateAnimation rotate = new RotateAnimation(-10, 10, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
