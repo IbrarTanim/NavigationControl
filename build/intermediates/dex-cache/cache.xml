@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\abc\NavigationControl\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b087e488923ff5c0ef02bbbae330890ff0f1126c">
+        <dex dex="F:\abc\NavigationControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ec952390594f9baa1b9141c56996d6302d3d4a43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\abc\NavigationControl\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="F:\abc\NavigationControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b9925cf2258d0a32027cb1fcf1d17878cbb41d9b\classes.dex" />
+    </item>
+
+</items>
