@@ -9,7 +9,7 @@ import android.view.WindowManager;
  */
 public class DialogNavBarHide {
 
-    public static void navBarHide(Activity activity, Dialog dialog) {
+    public void navBarHide(Activity activity, Dialog dialog) {
         dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
         dialog.show();
         dialog.getWindow().getDecorView().setSystemUiVisibility(activity.getWindow().getDecorView().getSystemUiVisibility());
